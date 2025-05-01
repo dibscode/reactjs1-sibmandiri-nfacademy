@@ -1,6 +1,14 @@
 function Contact() {
     return (
       <div className="row">
+      
+        <img src="https://lh6.googleusercontent.com/proxy/udT_Iaq0Qo6TXzrc_SypE9bvXJh2DLjt2sb4cmC5DNF-KhX2jZ8_yN3_HQj9gMyoaJiLNPvHk1Iq2wOxhEMCf9DJq92DpzlPHF8FC6ciuqReLInmEvdUkg" alt="" style={{
+            borderRadius: '15px', 
+            paddingBottom: '24px', 
+            maxWidth: '100%',
+            height: 'auto'
+          }}/>
+      
         <div className="col-md-6 mb-3">
           <iframe
             title="maps"

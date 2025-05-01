@@ -1,23 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Footer from './components/FooterPage'
 import Home from './pages/Home'
-import Team from './pages/Team'
+import Team from './pages/TeamPage'
 import Contact from './pages/Contact'
+import Book from './pages/Book'
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
-      <div className="container mt-4">
+      <main className="container py-4">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route index element={<Home />} />
+          <Route path="book" element={<Book />} />
+          <Route path="team" element={<Team />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
-    </Router>
+    </>
   )
 }
 
