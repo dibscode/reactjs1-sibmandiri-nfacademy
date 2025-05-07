@@ -1,9 +1,9 @@
 function Footer() {
-    return (
-      <footer className="bg-dark text-white text-center py-3 mt-5">
-        <p>© 2025 My Website. All rights reserved.</p>
-      </footer>
-    )
-  }
-  export default Footer
-  
+  return (
+    <footer className="bg-gray-900 text-white text-center py-4 mt-10">
+      <p>© 2025 DibsBook. All rights reserved.</p>
+    </footer>
+  );
+}
+
+export default Footer;
